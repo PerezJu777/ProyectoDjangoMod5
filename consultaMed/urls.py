@@ -10,4 +10,5 @@ router.register(r"consulta", views.ConsultaViewSet)
 urlpatterns = [
     path("", views.index, name="index"),
     path("", include(router.urls)),
+    path('recetas/',views.recetas_view),
 ]
